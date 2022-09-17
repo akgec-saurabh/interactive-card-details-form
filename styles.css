@@ -1,0 +1,171 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --active-input-border: (hsl(249, 99%, 64%) to hsl(278, 94%, 30%));
+  --red-input-errors: hsl(0, 100%, 66%);
+
+  /* Neutral */
+
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+
+  height: 100%;
+  background-image: url("./images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 33% 100%;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+.details-box {
+  width: 67%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15%;
+}
+
+.detail-container {
+  min-width: 350px;
+  width: 50%;
+}
+.cards {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.ione-container {
+  margin-left: 50%;
+  position: relative;
+  width: 80%;
+  max-width: 500px;
+  min-width: 350px;
+}
+
+.name,
+.cardnum,
+.exdate {
+  position: absolute;
+  color: var(--white);
+  left: 10%;
+}
+.cardnum {
+  top: 55%;
+}
+.name,
+.exdate {
+  top: 75%;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.exdate {
+  left: 79%;
+}
+
+.ione {
+  width: 100%;
+}
+
+.itwo {
+  width: 100%;
+}
+.itwo-container {
+  width: 80%;
+  max-width: 500px;
+  margin-left: 100%;
+  min-width: 350px;
+}
+
+.logo {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 20%;
+}
+
+.block,
+.label {
+  display: block;
+}
+.detail-two {
+  display: flex;
+}
+
+input {
+  width: 100%;
+}
+.expiry,
+.cvv {
+  width: 50%;
+}
+.expiry input {
+  width: 40%;
+}
+
+input::placeholder {
+  font-size: 18px;
+  color: var(--dark-grayish-violet);
+  letter-spacing: 0.02rem;
+}
+
+label,
+.label {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--very-dark-violet);
+  margin: 0.5rem 0;
+}
+
+input {
+  outline: 0;
+  border: 1px solid var(--dark-grayish-violet);
+  border-radius: 0.4rem;
+  padding: 0.625rem;
+  margin-bottom: 1.2rem;
+  margin-right: 0.625rem;
+  font-size: 18px;
+}
+
+.confirm {
+  background-color: var(--very-dark-violet);
+  color: var(--white);
+  padding: 12px;
+  border-radius: 0.4rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* Removing input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

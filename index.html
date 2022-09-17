@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cards">
+        <div class="ione-container">
+          <div class="cardnum">0000 0000 0000 0000</div>
+          <div class="name">Jane appleseed</div>
+          <div class="exdate">00/00</div>
+          <img class="logo" src="./images/card-logo.svg" alt="" />
+          <img class="ione" src="./images/bg-card-front.png" alt="Card front" />
+        </div>
+
+        <div class="itwo-container">
+          <div class="cvv">000</div>
+          <img class="itwo" src="./images/bg-card-back.png" alt="Card back" />
+        </div>
+      </div>
+      <div class="details-box">
+        <div class="detail-container">
+          <div class="detail-one">
+            <label class="block" for="name">Cardholder name</label>
+            <input type="text" id="name" placeholder="e.g. Jane Appleseed" />
+          </div>
+          <div class="detail">
+            <label class="block" for="cardnumber">Card number</label>
+            <input
+              type="number"
+              id="cardnumber"
+              placeholder="e.g. 1234 5678 9123 0000"
+            />
+          </div>
+          <div class="detail-two">
+            <div class="expiry">
+              <label for="expirydate"
+                ><span class="label">Exp.date (mm/yy)</span>
+                <input type="number" id="emonth" placeholder="MM" />
+                <input type="number" id="eyear" placeholder="YY" />
+              </label>
+            </div>
+            <div class="cvv">
+              <label for="cvv"
+                ><span class="label">CVC</span>
+                <input type="number" id="cvv" placeholder="e.g 123" />
+              </label>
+            </div>
+          </div>
+          <div class="confirm">Confirm</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
